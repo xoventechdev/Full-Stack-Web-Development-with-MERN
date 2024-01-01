@@ -10,7 +10,9 @@ async function getData() {
 
   json.forEach((element) => {
     let row = document.createElement("tr");
-    row.innerHTML = `<td>${element.serverName}</td><td>${element.MaxSpeed}</td><td>${element.flagURL}</td>`;
+    row.innerHTML = `<td>${element.serverName}</td><td>${
+      element.MaxSpeed / 1000000
+    } Mbps</td><td>${element.flagURL}</td>`;
     serverlist.appendChild(row);
   });
 }
