@@ -18,3 +18,21 @@ offBulb.addEventListener("click", function(){
     bulb.src = "https://previews.123rf.com/images/peshkova/peshkova1206/peshkova120600306/14060282-light-bulb-on-a-white-background.jpg";
 });
 
+function txtColorChange(){
+    if(document.getElementById("txtForChange").style.color == "red"){
+        document.getElementById("txtForChange").style.color = "black";
+    }else{
+        document.getElementById("txtForChange").style.color = "red";
+    }
+};
+
+function txtText(){
+    if(document.getElementById("txtForChange").style.opacity == "1"){
+        document.getElementById("txtForChange").style.opacity = "0";
+    }else{
+        document.getElementById("txtForChange").style.opacity = "1";
+    }
+};
+
+
+
