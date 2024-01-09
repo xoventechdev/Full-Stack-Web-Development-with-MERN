@@ -1,5 +1,5 @@
 :root {
-    --app--primary--color: brown;
+    --app--primary--color: #CF3B79;
     --app--secondary--color: white;
     --app--solid--color: #068886;
 }
@@ -54,6 +54,11 @@ header {
     border-radius: 10px;
 }
 
+.navbar-brand  img {
+    height: 50px;
+    padding: 2px;
+}
+
 .navbar-brand {
     font-size: 30px;
     font-weight: 700;
@@ -61,7 +66,15 @@ header {
 }
 
 .navbar-brand:hover {
-    color: #FF9C03;
+    color: #BED4FC;
+}
+
+.hero-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-img:hover {
+    transform: scale(1.05);
 }
 
 .hero-txt {
@@ -90,6 +103,7 @@ header {
 }
 
 .gobtn {
+    transition: transform 0.3s ease-in-out;
     background-color: #068886;
     color: var(--app--secondary--color);
     border: none;
@@ -100,6 +114,7 @@ header {
 }
 
 .gobtn:hover {
+    transform: scale(1.05);
     background-color: var(--app--primary--color);
     color: var(--app--secondary--color);
 }
@@ -136,11 +151,16 @@ header {
     background-color: var(--app--primary--color);
     color: var(--app--secondary--color);
     font-weight: 700;
-    font-style: italic;
+    font-size: 20px;
     text-align: center;
     padding: 5px;
     margin-bottom: 60px !important;
     margin-top: 10px;
+}
+
+#ageInput button:hover {
+    background-color: var(--app--secondary--color);
+    color: var(--app--solid--color);
 }
 
 #ageResult img {
@@ -164,11 +184,15 @@ header {
     background-color: var(--app--primary--color);
     color: var(--app--secondary--color);
     font-weight: 700;
-    font-style: italic;
     text-align: center;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+#contactbtn:hover {
+    background-color: var(--app--secondary--color);
+    color: var(--app--solid--color);
 }
 
 .footer-box {
