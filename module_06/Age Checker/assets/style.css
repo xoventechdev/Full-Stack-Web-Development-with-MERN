@@ -99,6 +99,11 @@ header {
     box-shadow: #000000 0px 5px 5px 0px;
 }
 
+.gobtn:hover {
+    background-color: var(--app--primary--color);
+    color: var(--app--secondary--color);
+}
+
 #ageInput {
     justify-content: center;
     /* background-image: url("https://img.freepik.com/free-vector/red-haired-man-different-age_74855-5924.jpg"); */
